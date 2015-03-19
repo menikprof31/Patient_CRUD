@@ -1,0 +1,253 @@
+@CHARSET "ISO-8859-1";
+
+html, body{
+	padding: 0px;
+	margin: 0px;
+}
+#heading1{
+	position: relative;
+	width: auto;
+	height: 120px;
+	background-color: #F6F1F1;
+	
+}
+#logoimage{
+	height: 120px;
+}
+#heading2{
+	position: relative;
+	width: auto;
+	height: 30px;
+	background-color: #1524F0;
+	
+}
+
+#center{
+	position: relative;
+	width: auto;
+	height: 715px;
+	background-color: #F6F1F1;	
+}
+
+#bottom1{
+	position: relative;
+	width: auto;
+	height: 25px;
+	background-color:yellow;	
+}
+#bottom2{
+	position: relative;
+	width: auto;
+	height: 35px;
+	background-color:#1524F0;	
+}
+
+#leftPanel{
+	position: absolute;
+	margin-left: 25%;
+	margin-top:10px;
+	height: 480px;
+	width: 300px;
+	border: medium;
+	background-color: #CFCECE;
+	border: solid 2px;
+}
+#rightPanel{
+	position: absolute;
+	margin-left: 44%;
+	margin-top:10px;
+	height: 480px;
+	background-color: #F7F5FC;
+	width: 700px;
+	border: solid 2px;
+	border-color: black;
+}
+
+.lines{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	border-bottom: solid 1px;
+	
+}
+#transactionLine{
+	position: relative;
+	height: 20px;
+	width: 100%;
+	margin-top: 0px;
+}
+#psCenter{
+	position:relative;
+	width: 500px;
+	height: 230px;
+	margin-left: auto;
+	margin-right:auto;
+	margin-top:50px;
+	border: solid 2px;
+	border-radius:15px;
+	box-shadow: 10px 10px 5px #888888;
+	
+}
+#psMainHeasing{
+	
+	width: auto;
+	height: 30px;
+	background-color: blue;
+	border-top-left-radius:14px;
+	border-top-right-radius:14px;
+}
+#psMainHeasing label{
+	color: white;
+	margin-left: 10px;
+}
+label {
+	color: gray;
+	margin-left: 10px;
+	
+}
+.line{
+	width:auto;
+	height: 30px;
+	border-bottom: solid 1px; 
+	
+}
+.line .label{
+	position:absolute;
+	height:inherit;
+	border-right:solid 1px;
+	width: 100px;	
+	background-color: #F1F0F1;
+}
+
+.label label{
+	position:absolute;
+	margin-top: 5px;
+}
+.content{
+	position:absolute;
+	margin-left: 130px;	
+	float: left;
+}
+
+.content input, select {
+	width:200px; 
+	margin-top: 5px;
+}
+.buttonDiv{
+	position: relative;
+	margin-top:10px;
+	width:100%;
+	
+}
+.buttonDiv input{
+	float:right;
+	margin-right:3px;
+	border-radius: 15px;
+}
+#example{
+	border-top-left-radius:15px;
+	border-top-right-radius:15px;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+#example thead{
+	
+	color: #fff;
+    background-color: #2ecc71;
+    border-left:solid 1px #78e0a4;
+    box-shadow: inset 0px 1px 0px #6ccc95, 0px 6px 0px #27ae60, 0px 10px 5px rgba(39, 39, 39, 0.8);
+}
+#example th{
+	border-top-left-radius:14px;
+	border-top-right-radius:14px;
+}
+
+
+* 
+
+3D Flat Buttons
+http://dubhe.com.br/freebies/3dflatbuttons/
+
+Developed by DUBHE 
+Version: 1.0 - 05/11/2014
+Author: Rafael Zago
+
+*/
+
+.button {
+    background-color:#bdc3c7;
+    font-size:13px;
+    text-decoration:none;
+    color:#333;
+    position:relative;
+    margin-left:35px;
+    padding:10px 20px;
+    border-left:solid 1px #d3d8db;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px #dcdfe1, 0px 5px 0px 0px #7f8c8d, 0px 10px 5px rgba(39, 39, 39, 0.8);
+}
+
+
+
+/* EFFECTS */
+
+
+
+
+/* COLORS */
+
+
+.button-primary {
+    color: #fff;
+    background-color: #3498db;
+    border-left:solid 1px #6fbaec;
+    box-shadow: inset 0px 1px 0px #73b0d8, 0px 6px 0px #2980b9, 0px 10px 5px rgba(39, 39, 39, 0.8);
+}
+.button-primary:hover {
+	color: #2980b9;
+	box-shadow: inset 0px 1px 0px #73b0d8, 0px 1px 0px 0px #2980b9, 0px 2px 5px rgba(39, 39, 39, 0.8);
+}
+.button-success {
+    color: #fff;
+    background-color: #2ecc71;
+    border-left:solid 1px #78e0a4;
+    box-shadow: inset 0px 1px 0px #6ccc95, 0px 6px 0px #27ae60, 0px 10px 5px rgba(39, 39, 39, 0.8);
+}
+.button-success:hover {
+	color: #26a95e;
+	box-shadow: inset 0px 1px 0px #6ccc95, 0px 1px 0px 0px #27ae60, 0px 2px 5px rgba(39, 39, 39, 0.8);
+}
+.button-error {
+    color: #fff;
+    background-color: #e74c3c;
+    border-left:solid 1px #ee897f;
+    box-shadow: inset 0px 1px 0px #e98a80, 0px 5px 0px #c0392b, 0px 10px 5px rgba(39, 39, 39, 0.8);
+}
+.button-error:hover {
+	color: #cc3e2f;
+	box-shadow: inset 0px 1px 0px #e98a80, 0px 1px 0px 0px #c0392b, 0px 2px 5px rgba(39, 39, 39, 0.8);
+}
+.button-warning {
+    color: #fff;
+    background-color: #e67e22;
+    border-left:solid 1px #f0ab6e;
+    box-shadow: inset 0px 1px 0px #e3a36a, 0px 6px 0px #d35400, 0px 10px 5px rgba(39, 39, 39, 0.8);
+}
+.button-warning:hover {
+	color: #c56816;
+	box-shadow: inset 0px 1px 0px #e3a36a, 0px 1px 0px 0px #d35400, 0px 2px 5px rgba(39, 39, 39, 0.8);
+}
+
+
+/* SIZES */
+
+
+.button-small {
+    font-size: 73%;
+}
+.button-regular {
+    font-size: 100%;
+}
+.button-large {
+    font-size: 140%;
+}

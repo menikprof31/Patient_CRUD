@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="MyTest" basedir=".." default="build">
+	<property file = "WebContent/build.properties"/>
+	
+  	<property name="src.dir" value="src"/>
+  	<property name="web.dir" value="WebContent"/>
+  	<property name="build.dir" value="${web.dir}/WEB-INF/classes"/>
+  	<property name="name" value="fax"/>
+
+   <path id="master-classpath">
+      <fileset dir="${web.dir}/WEB-INF/lib">
+         <include name="*.jar"/>
+      </fileset>
+      <pathelement path="${build.dir}"/>
+   </path >
+
+   <target name="build" description="Compile source tree java files">
+      <mkdir dir="${build.dir}"/>
+      
+      <echo message = "Compiling files"/>
+      
+      <javac destdir="${build.dir}" source="1.7" target="1.7">
+         <src path="${src.dir}"/>
+         <classpath refid="master-classpath"/>
+      </javac>
+      
+      <antcall target="deploy" />
+   </target>
+   
+   <target name = "deploy" description = "Deploy application">
+   		<echo message = "Deploying files to ${deploy.path}"/>
+      <copy todir = "${deploy.path}/${name}" preservelastmodified = "true">
+
+         <fileset dir = "${web.dir}">
+            <include name = "**/*.*"/>
+         </fileset>
+
+      </copy>
+   </target>
+ 
+   <target name="clean" description="Clean output directories">
+      <delete>
+         <fileset dir="${build.dir}">
+            <include name="**/*.class"/>
+         </fileset>
+      </delete>
+   </target>
+</project>
